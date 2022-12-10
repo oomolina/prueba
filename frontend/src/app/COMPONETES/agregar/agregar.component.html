@@ -1,0 +1,20 @@
+<div class="container">
+    <form action="">
+        <label for="nombres">Estudiantes</label>
+        <input type="text" id="nombres" name="nombres" [(ngModel)]="estudianteaNueva.nombres">
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" [(ngModel)]="estudianteaNueva.apellidos">
+        <br>
+        <label for="codigo">Codigo</label>
+        <input type="text" name="codigo" id="codigo" [(ngModel)]="estudianteaNueva.codigo">
+        <br>
+        <label for="reunion">Reunion</label>
+        <input type="text" name="reunion" id="reunion" [(ngModel)]="estudianteaNueva.reunion">
+        <br>
+        <label for="activo">Estado</label>
+        <input type="checkbox" name="activo" id="activo" [(ngModel)]="estudianteaNueva.activo">
+        <br>
+        <button class="btn btn-primary" (click)="agregarEstudiantes()">Guardar</button>
+    </form>
+</div>
